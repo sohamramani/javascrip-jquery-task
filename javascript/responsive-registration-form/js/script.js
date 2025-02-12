@@ -88,7 +88,8 @@ function hobbies_validation(){
 
 
 // for check validation of all 
-function checkvalid() {
+const element = document.getElementById("register");
+element.addEventListener("click", function(e) {
     email_validation ();
     password_validation();
     re_password_validation();
@@ -98,5 +99,7 @@ function checkvalid() {
     country_validation();
     term_validation();
     hobbies_validation();
- }
+    e.preventDefault()
+});
+
 
