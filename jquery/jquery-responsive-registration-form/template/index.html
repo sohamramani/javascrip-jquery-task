@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <!-- bootstrap and css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form action="https://www.google.com/"  id="myform" name="registration" >
+    <div class="container registrationform">
+        <div class="row d-flex justify-content-center">
+            <div class="col-5  bg-light shadow-lg p-3 mb-5 bg-white rounded border border-5 border-end-0 border-bottom-0 border-start-0 border-warning">
+                <!-- title -->
+                <h1 class="text-center mb-5"> Responsive Registration Form </h1>
+                <!-- email -->
+                <div class="input-group row mb-4">
+                    <div class="input-group-prepend me-4 col-1">
+                        <svg class="input-group-text" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    </div>
+                    <input id="email" type="text" class=" col-11 form-control " name="email" placeholder="Email">
+                </div>
+                <!-- password -->
+                <div class="input-group row mb-4">
+                    <div class="input-group-prepend me-4 col-1">
+                        <svg class="input-group-text" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+                    </div>
+                    <input id="pass" type="password" class="col-11 form-control " name="password" placeholder="Password">
+                </div>
+                <!-- re-pass -->
+                <div class="input-group row mb-4">
+                    <div class="input-group-prepend me-4 col-1">
+                        <svg class="input-group-text" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+                    </div>
+                    <input id="re-pass" type="password" class="col-11 form-control " name="re_password" placeholder="Re-type password">
+                </div>
+                <!-- firstname & lastname -->
+                <div class="row ">
+                    <div class="row col-lg">
+                        <div class=" col-md-4 input-group ">
+                            <div class="input-group-prepend">
+                                <svg class="input-group-text" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                            </div>
+                            <input id="fname" type="text" class="form-control fname" name="fname" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="row col-lg">
+                        <div class="col-md-4 input-group ">
+                            <div class="input-group-prepend">
+                                <svg class="input-group-text" xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                            </div>
+                            <input id="lname" type="text" class="form-control lname" name="lname" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-danger col-6" id="fname-valid"></div>
+                    <div class="text-danger col-6" id="lname-valid"></div>
+                </div>
+                
+                <!-- gender -->
+                <div class="input-group mt-4">
+                    <div class="form-check">
+                        <input class="form-check-input gender" name="gender" value="Male" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label me-3" for="flexRadioDefault1">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="gender" value="Female" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">Female</label>
+                    </div>
+                </div>
+                <div class="text-danger mb-4 " id="gender-valid"></div>
+                
+                <!-- country -->
+                <div class="input-group select ">
+                    <select type="section" class="form-select country" id="country" name="country" aria-label="Default select example">
+                        <option value="" placeholder="Select a country" >Select a country</option>
+                        <option value="1">Bharat</option>
+                        <option value="2">USA</option>
+                    </select>
+                </div>
+                <div class="text-danger mb-4" id="country-valid"></div>
+
+                <!-- hobbies -->
+                <div class="form-check d-flex justify-content-lg-start row">
+                    <h6 class="mb-2">Hobbies : </h6>
+                    <div class="col-4">
+                        <input class="form-check-input hobbies" type="checkbox" name="hobbies" value="football" id="football">
+                        <label class="form-check-label" for="football">Football</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-check-input hobbies" type="checkbox" name="hobbies" value="cricket" id="cricket">
+                        <label class="form-check-label" for="cricket">Cricket</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-check-input hobbies" type="checkbox" name="hobbies" value="hockey" id="hockey">
+                        <label class="form-check-label" for="hockey">Hockey</label>
+                    </div>
+                </div>
+                <div class="text-danger mb-4" id="hobbies-valid"></div>
+
+                <!-- terms and conditions -->
+                <div class="form-check ">
+                    <h6 class="mb-2">Terms & Conditions : </h6>
+                    <input class="form-check-input terms" type="checkbox" name="terms" value="terms" id="terms">
+                    <label class="form-check-label" for="terms">I agree with terms and conditions</label>
+                </div>
+                  <div class="text-danger mb-4" id="term-valid"></div>
+
+                <!-- newsletter -->
+                <div class="form-check mb-5">
+                    <h6 class="mb-2">Newsletter : </h6>
+                    <input class="form-check-input" type="checkbox" value="newsletter" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">I want to receive the newsletter</label>
+                </div>
+
+                <!-- Register -->
+                <div class="input-group ">
+                    <button type="submit" id="register" class="btn btn-warning w-100 ">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- javascript and jquery -->
+<!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
